@@ -1,0 +1,5 @@
+# Description
+
+Calculates the confusion limit using the probability of deflection from Condon, Vernstrom, etc.
+
+Plots this confusion limit for a variety of lower flux thresholds.
