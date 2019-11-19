@@ -31,7 +31,7 @@ sigma = fwhm / (2 * np.sqrt(2 * np.log(2)))
 beam = np.exp(-dists**2 / (2 * sigma**2))
 
 # Special ASKAP fix for stokes I calculation
-beam *= 2
+beam /= 2
 
 template.data[:] = beam
 template.writeto(args.output, overwrite=True)
